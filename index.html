@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h4>Outer Wilds</h4>
+        <h3> clique sur le bouton pour passer en darkmode</h3>
+        <button onclick="changeMode()">Change de Couleur</button>        
+    </header>
+    
+    <main>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                    <img class="image" src="img/outer_wild_banniere.jpg" alt="outer_wilds1">
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/outer1.jpg" alt="outer_wilds1">
+                    <p class="text-over">Un jeu aux multiple prix</p>
+                    <p class="text-overr"> Comme le BAFTA Games Award du meilleur jeu en 2020</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/Solar_system_map.webp" alt="outer_wilds1">
+                    <p class="text-over">Une aventure formidable</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/AtreBois.webp" alt="outer_wilds1">
+                    <p class="text-over">Et une experience de jeu unique</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="texte">
+            <h2>Outer Wilds</h2>
+            <p>C'est une expérience hors du commun pour des joueurs de jeux vidéos de nos jours.</p>
+            <p>Le Game design est réflechis du début à la fin de l'histoire.</p>
+        </div>
+
+        <div class="texte">
+            <p>Découvrez ce chef-d'oeuvre à travers mon site internet.</p>
+            <p>Naviguez entre les images et baladez vous sur les différentes pages.</p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                    <img class="image" src="img/vaisseau.jpg" alt="outer_wilds">
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/poissongeant.jpg" alt="outer_wilds">
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/debut.webp" alt="outer_wilds">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <ul class="liste">
+            <li class="tab tab-Synopsis tab-active"> <button class="tablinks" onclick="openCity(event, 'Synopsis')">Synopsis</button> </li>
+            <li class="tab tab-Planete"> <button class="tablinks" onclick="openCity(event, 'Planete')">Planete</button> </li>
+        </ul>
+
+        <div class="content Synopsiss active">
+            <p> 
+                Outer Wilds est un jeu d'aventure où les joueurs incarnent un astronaute
+                 d'une race extraterrestre. L'univers du jeu est en proie à une boucle temporelle
+                  de 22 minutes. Les joueurs explorent un système solaire mystérieux, découvrant
+                   des planètes, des lunes, et résolvant des énigmes pour comprendre le mystère
+                    de la fin imminente de l'univers. L'approche non linéaire et l'exploration
+                     spatiale sont au cœur du gameplay, offrant une expérience immersive et
+                      captivante. Le jeu aborde des thèmes profonds tels que le temps, l'existence,
+                       et la signification de la vie.</p>
+        </div>
+        <div class="content Planetee ">
+            <p>Outer Wilds propose un système solaire captivant avec des planètes uniques.
+                 Parmi elles, l'Ember Twin et son jumeau l'Attlerock, la Giant's Deep aux
+                  océans tumultueux, la Hollow's Lantern, une planète creuse avec des éruptions
+                   de lave, le Brittle Hollow qui se désintègre progressivement, et l'Interloper,
+                    un astéroïde glacial. Chaque destination offre des défis et des mystères,
+                     incitant les joueurs à explorer ces mondes variés dans leur quête pour comprendre
+                      le destin cosmique qui les entoure.</p>
+        </div>
+
+    </main>
+
+    <footer>
+    
+        <div class="form">
+            <div class="message-error">
+                <ul></ul>
+            </div>
+    
+            <div class="message-success">
+                Formulaire envoyé !
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom">
+                </div>
+    
+                <div>
+                    <label for="prenom">Prenom</label>
+                    <input type="text" name="prenom" id="prenom">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <p>Est-ce que tu y as joué ?</p>
+
+                <div>
+                    <label for="oui">Oui</label>
+                    <input type="radio" name="oui" id="oui">
+                </div>
+                <div>
+                    <label for="non">Non</label>
+                    <input type="radio" name="non" id="non">
+                </div>
+
+                <select name="cours" id="">
+                    <option value="choix"> Choisir une option</option>
+                    <option value="garcon"> Garçon  </option>
+                    <option value="fille"> Fille </option>
+                </select>
+    
+                <button type="submit">S'inscrire</button>
+                
+            </form>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
